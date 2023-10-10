@@ -1,0 +1,1 @@
+powershell -Command "$udp = New-Object System.Net.Sockets.UdpClient; $udp.Connect('Mac_IP', Port); $msg = [Text.Encoding]::ASCII.GetBytes('Hello'); $udp.Send($msg, $msg.Length)"
